@@ -2,16 +2,16 @@
 
 namespace Basket.API.Entities
 {
-    public class ShopingCart
+    public class ShoppingCart
     {
         public string UserName { get; set; }
         public List<ShopingCartItem> Items { get; set; } = new List<ShopingCartItem>();
 
-        public ShopingCart()
+        public ShoppingCart()
         {
         }
 
-        public ShopingCart(string userName)
+        public ShoppingCart(string userName)
         {
             UserName = userName;
         }
