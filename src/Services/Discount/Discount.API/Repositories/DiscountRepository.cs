@@ -13,7 +13,7 @@ namespace Discount.API.Repositories
     {
         private readonly IConfiguration configuration;
         private readonly Coupon DefaultCoupon = new() { ProductName = "No Discount", Amount = 0, Description = "No Discount Description" };
-        private readonly string DbConnConfigString = "DatabaseSettings:ConnectionString";
+        public static readonly string DbConnConfigString = "DatabaseSettings:ConnectionString";
         public DiscountRepository(IConfiguration configuration)
         {
             this.configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
