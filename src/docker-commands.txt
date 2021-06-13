@@ -1,4 +1,5 @@
 docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d
+docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml down
 
 docker run -d -p 3000:3000 mongoclient/mongoclient
 
